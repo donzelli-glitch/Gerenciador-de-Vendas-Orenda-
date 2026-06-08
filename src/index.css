@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-petrol-950: #051424;
+  --color-petrol-900: #0b2240;
+  --color-petrol-800: #102e54;
+  --color-petrol-700: #174073;
+  --color-cobalt-600: #2563eb;
+  --color-cobalt-500: #3b82f6;
+  --color-cobalt-400: #60a5fa;
+  --color-bic: #0038a8;
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .biotech-glow {
+    box-shadow: 0 0 40px rgba(37, 99, 235, 0.15);
+  }
+
+  /* Keep legacy class name mapped to biotech glow for backwards compatibility safety */
+  .crimson-glow {
+    box-shadow: 0 0 40px rgba(37, 99, 235, 0.15);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom modern scrollbar for spreadsheet simulation tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020813;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #17253a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}

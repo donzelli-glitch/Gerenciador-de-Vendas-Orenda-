@@ -1,0 +1,6 @@
+{
+  "name": "Gestão de Vendas Orenda",
+  "description": "Sistema corporativo integrado ao Google Sheets para gestão de vendas, produtos, comissões de afiliados e controle de estoque de Orenda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
